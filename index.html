@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+    crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!--nav-Bar-->
+    <section class="nav">
+        <div class="container-fluid py-1">
+            <nav class="navbar navbar-expand-lg bg-white mt-0 fixed-top">
+                <div class="container-fluid">
+                  <a class="navbar-brand me-5" href="#">Launch<span class="dot">.</span></a>
+                  <button
+                    class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link ms-1" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle ms-1" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#testimonials">Testimonials</a>
+                          </li>
+                          <!--for submenu-->
+                          <li class="dropend">
+                            <a class="dropdown-item dropdown-toggle d-none d-lg-block"  data-bs-toggle="dropdown" href="#">Menu two</a>
+                            <ul class="dropdown-menu text-capitalize">
+                              <li><a class="dropdown-item " href="#" >sub menu one</a></li>
+                              <li><a class="dropdown-item " href="#">sub menu two</a></li>
+                              <li><a class="dropdown-item" href="#">sub menu three</a></li>
+                            </ul>
+                          </li>
+                          <!-- submenu for small screen-->
+                          <li>
+                            <a class="dropdown-item dropdown-toggle d-lg-none"
+                              data-bs-toggle="dropdown"
+                              href="#">Menu 2</a>
+                            <ul class="dropdown-menu text-capitalize">
+                              <li><a class="dropdown-item" href="#">sub menu one</a></li>
+                              <li><a class="dropdown-item" href="#">sub menu two</a></li>
+                              <li><a class="dropdown-item" href="#">sub menu three</a></li>
+                            </ul>
+                          </li>
+                          <li><a class="dropdown-item" href="#">Menu three</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ms-1" href="#features">Feature</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ms-1" href="#pricing">Pricing</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ms-1" href="#about">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link ms-1" href="#get-in-touch">Contacts</a>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                      <li class="nav-item d-none d-lg-block me-2">
+                        <button class="nav-link btn custom-btn-1 rounded-pill px-4 py-1">Sign in</button>
+                      </li>
+                      <li class="nav-item d-none d-lg-block">
+                         <button class="nav-link btn btn-primary custom-btn-2 rounded-pill px-3 py-1">Register</button>
+                      </li>
+                    </ul>
+                    <ul class="navbar-nav d-lg-none">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Sign in</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </section>
+<!--hero section-->
+<section class="hero">
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-5 order-lg-1 order-2 col-12 text-align-center justify-content-center align-item-center mt-5 pt-4" data-aos="fade-up" data-aos-once="true">
+                <h1 class="main-text text-center text-lg-start">Promote Your Products by Colorlib</h1>
+                <div class="text">
+                    <p class="sub-text mb-4 text-center text-lg-start">Another cool free html css template by 
+                        <a href="#" target="_blank" class="color">Colorlib</a> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast.</p>
+                    <div class="buttons text-center text-lg-start">
+                      <button class="btn btn-primary custom-btn-3 text-uppercase rounded-pill py-3 px-5 d-inline-block">See features</button>
+                      <button class="btn text-primary  custom-btn-4 text-uppercase border border-primary rounded-pill py-3 px-4">Pricing</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-12 order-lg-2 order-xl-2 order-1 hero-cols  pt-3 mt-3" data-aos="fade-right" data-aos-once="true">
+                <div class="hero-image d-flex">
+                    <img src="images/market-launch-pana.png" alt="hero-section" class="image-fluid w-100 h-auto hero-pana mt-5">
+                    <div class="w-100">
+                      <img src="images/dots.png.webp" alt="hero-section" class="image-fluid hero-dot">
+                    </div>
+                </div>
+            </div>
+         </div>
+    </div>
+</section>
+
+<!--features-->
+<section id="features" class="main">
+    <div class="container pt-3">
+        <div class="row pt-5">
+            <div class="col-lg-4 col-12 order-1" data-aos="fade-up" data-aos-once="true">
+                <p class="text-uppercase text-primary mb-0 blue-text">Digital service</p>
+                <p class="text-capitalize heading-1">Selling digital services</p>
+                <p class="sub-text mb-4 text-center text-lg-start">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coas.</p>
+                <ul class="list-unstyled checkmark sub-text ">
+                    <li> There live the blind texts</li>
+                    <li class="mt-2"> Far far away behind the word</li>
+                </ul>
+                <p class="feature-text" data-aos="fade-up" data-aos-once="true"> “Separated they <span class="color">live in Bookmarksgrove right at the coast of the Semantics,</span> a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. ”</p>
+                <div class="references d-flex align-item-center" data-aos="fade-up" data-aos-once="true">
+                    <div class="image-container">
+                      <img src="images/person_1.jpg.webp" alt="James Anderson" class="image rounded-pill">
+                    </div>
+                    <div class="text-container d-flex" data-aos="fade-up" data-aos-once="true">
+                      <p class="name mt-2 ms-2 mb-0">James Anderson</p>
+                      <p class="sub-text-1 mt-1 ms-2">Facebook, Product Lead</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-8 col-12 order-2 justify-content-center align-item-center d-flex pt-4 px-3">
+              <div class="card" data-aos="fade-up" data-aos-once="true">
+                <div class="card-body">
+                  <!--Button with image in background-->
+                  <button type="button" data-bs-target="#videoModal" data-bs-toggle="modal" class="btn btn-custom btn-video" >
+                    <div class="btn-content">
+                      <img src="images/dashboard.jpg.webp" alt="Background-Image" class="btn-background">
+                      <span class="btn-icon btn custom"><i class="fas fa-play text-primary"></i></span>
+                    </div>
+                  </button>
+                  <!--modal and its header-->
+                  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close position-abssolute top-0" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <!--body-->
+                        <div class="modal-body text-center justify-content-center align-item-center">
+                          <div class="embed-responsive video d-flex text-center text-center justify-content-center align-item-center">
+                            <iframe class="embeed-responsice-items  pt-5" src="https://www.youtube.com/embed/tApPdt_Y8jE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+          </div>
+        </div>
+</section>
+<!--images-->
+<section class="py-5 pricing">
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-7 col-12 order-lg-1 order-2" data-aos="fade-up" data-aos-once="true">
+        <div id="myCarousel" class="carousel carousel-1 slide mt-3" data-bs-ride="carousel" data-bs-interval="4000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+               <span class="number">1/4</span>
+              <img src="images/dashboard.jpg.webp" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <span class="number">2/4</span>
+              <img src="images/dashboard.jpg.webp" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <span class="number">3/4</span>
+              <img src="images/dashboard.jpg.webp" class="w-100 d-block">
+            </div>
+            <div class="carousel-item">
+                <span class="number">4/4</span>
+              <img src="images/dashboard.jpg.webp" class="w-100 d-block">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 order-lg-2 col-12 order-1">
+       <div id="connect-container">
+        <div class="d-flex align-item-center connect mt-2 mb-2 px-3 py-2" data-bs-target="#myCarousel" data-bs-slide-to="0" data-aos="fade-left" data-aos-once="true">
+            <div class="image-container">
+                <div class="icon-1">
+                    <svg class="bi bi-app-indicator custom-icon" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"></path>
+                        <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                        </svg>
+                    </div>
+            </div>
+            <div class="text-container d-flex">
+              <h5 class="mt-2 ms-2 text-capitalize">Grow your business</h5>
+              <p class="sub-text mt-1 ms-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+            </div>
+          </div>
+       </div>
+          <div id="connect-container">
+            <div class="d-flex align-item-center mb-2 px-3 py-2 connect active" data-bs-target="#myCarousel" data-bs-slide-to="1"  data-aos="fade-left" data-aos-once="true" >
+                <div class="image-container">
+                    <div class="icon-2">
+                        <svg class="bi bi-arrow-repeat custom-icon" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"></path>
+                            <path fill-rule="evenodd" d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"></path>
+                            </svg>
+                        </div>
+                </div>
+                <div class="text-container d-flex">
+                  <h5 class="mt-2 ms-2 text-capitalize">Build products</h5>
+                  <p class="sub-text mt-1 ms-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                </div>
+              </div>
+          </div>
+         <div id="connect-container">
+            <div class="d-flex align-item-center mb-2 px-3 py-2 connect" data-bs-target="#myCarousel" data-bs-slide-to="2"  data-aos="fade-left" data-aos-once="true">
+                <div class="image-container">
+                    <div class="icon-3">
+                        <svg class="bi bi-briefcase custom-icon" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6h-1v6a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-6H0v6z"></path>
+                            <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v2.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 6.884V4.5zM1.5 4a.5.5 0 0 0-.5.5v1.616l6.871 1.832a.5.5 0 0 0 .258 0L15 6.116V4.5a.5.5 0 0 0-.5-.5h-13zM5 2.5A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"></path>
+                            </svg>
+                        </div>
+                </div>
+                <div class="text-container d-flex">
+                  <h5 class="mt-2 ms-2 text-capitalize">Success every day</h5>
+                  <p class="sub-text mt-1 ms-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                </div>
+              </div>
+         </div>
+          <div id="connect-container">
+            <div class="d-flex align-item-center connect mb-3 px-3 py-2" data-bs-target="#myCarousel" data-bs-slide-to="3"  data-aos="fade-left" data-aos-once="true">
+                <div class="image-container">
+                    <div class="icon-4">
+                        <svg class="bi bi-collection custom-icon" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5zm-13 1A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"></path>
+                            </svg>
+                    </div>
+                </div>
+                <div class="text-container d-flex">
+                  <h5 class="mt-2 ms-2 text-capitalize">Bring ideas to life</h5>
+                  <p class="sub-text mt-1 ms-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia.</p>
+                </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--images co-section-->
+<section class="main py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12 py-2"  data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
+        <div class="image mt-1 mb-3">
+          <div class="icon-1">
+            <svg class="bi bi-app-indicator custom-icon" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"></path>
+                <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                </svg>
+            </div>
+        </div>
+        <h5>Grow Your Business</h5>
+        <p class="sub-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 py-2" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
+        <div class="image mt-1 mb-3">
+          <div class="icon-2">
+            <svg class="bi bi-arrow-repeat custom-icon" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"></path>
+                <path fill-rule="evenodd" d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"></path>
+                </svg>
+            </div>
+        </div>
+        <h5>Build Products</h5>
+        <p class="sub-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 py-2" data-aos="fade-up" data-aos-once="true">
+        <div class="image mt-1 mb-3" data-aos-delay="300">
+          <div class="icon-3">
+            <svg class="bi bi-briefcase custom-icon" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6h-1v6a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-6H0v6z"></path>
+                <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v2.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 6.884V4.5zM1.5 4a.5.5 0 0 0-.5.5v1.616l6.871 1.832a.5.5 0 0 0 .258 0L15 6.116V4.5a.5.5 0 0 0-.5-.5h-13zM5 2.5A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"></path>
+                </svg>
+            </div>
+        </div>
+        <h5>Success Every Day</h5>
+        <p class="sub-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12 py-2" data-aos="fade-up" data-aos-once="true" data-aos-delay="350">
+        <div class="image mt-1 mb-3">
+          <div class="icon-4">
+            <svg class="bi bi-collection custom-icon" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5zm-13 1A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"></path>
+                </svg>
+        </div>
+        </div>
+        <h5>Bring Ideas to Life</h5>
+        <p class="sub-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Pricing-->
+<section class="main pricing" id="pricing">
+  <div class="container">
+    <div class="row justify-content-center mb-4" data-aos="fade-up" data-aos-once="true">
+      <div class="col-12 text-center pt-5 mt-3 ">
+        <p class="heading-1">Pricing</p>
+        <p class="sub-text">Pricing for everyone. Choose your plan now!</p>
+      </div>
+    </div>
+    <!--cad-portion-->
+    <div class="row justify-content-center align-item-center">
+      <!--cad-1-->
+      <div class="col-lg-4 col-12 mt-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="50">
+        <div class="card card-0 card-1 mx-auto">
+          <div class="pricing-head text-center mt-5">
+            <p class="price">Free</p>
+            <p class="price text-primary sub-text"><sup>$</sup>0</p>
+          </div>
+          <ul class="list-unstyled checkmark px-5">
+            <li class="sub-text"> There live the blind texts</li>
+            <li class="mt-2 sub-text"> Far far away behind the word</li>
+            <li class="mt-2 sub-text"> Far from the countries Vokalia and Consonantia</li>
+         </ul>
+         <div class="text-center mt-3 mb-3">
+          <button class="btn text-primary custom-btn-4 text-uppercase border border-primary rounded-pill py-3 px-5">get started</button>
+         </div>
+         </div>
+      </div>
+      <!--card-2-->
+      <div class="col-lg-4 col-12 mt-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
+        <div class="card card-0 mx-auto card-2">
+          <div class="pricing-head text-center mt-5">
+            <p class="price">Standard</p>
+            <p  class="price text-primary sub-text"> <sup>$</sup>19.9</p>
+          </div>
+          <ul class="list-unstyled checkmark sub-text px-5">
+            <li class="sub-text"> There live the blind texts</li>
+            <li class="mt-2 sub-text "> Far far away behind the word</li>
+            <li class="mt-2 sub-text"> Far from the countries Vokalia and Consonantia</li>
+         </ul>
+         <div class="text-center mt-3 mb-3">
+          <button class="btn btn-primary custom-btn-3 text-uppercase rounded-pill py-3 px-5 d-inline-block"> get started</button>
+         </div>
+       </div>
+      </div>
+      <!--card-3-->
+      <div class="col-lg-4 col-12 mt-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="200">
+        <div class="card card-0 mx-auto card-3">
+          <div class="pricing-head text-center mt-5">
+            <p class="price">Premium</p>
+            <p class="price text-primary sub-text"> <sup>$</sup>79.99</p>
+          </div>
+          <ul class="list-unstyled checkmark px-5">
+            <li class="sub-text"> There live the blind texts</li>
+            <li class="sub-text mt-2"> Far far away behind the word</li>
+            <li class="mt-2 sub-text"> Far from the countries Vokalia and Consonantia</li>
+         </ul>
+         <div class="text-center mt-3 mb-3">
+          <button class="btn text-primary custom-btn-4 text-uppercase border border-primary rounded-pill py-3 px-5">get started</button>
+         </div>
+       </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--advantages-->
+<section class="main">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 text-center  pt-5 mt-3" data-aos="fade-up" data-aos-once="true">
+        <p class="heading-1">Advantage of using our products</p>
+        <p class="sub-text">Far from the countries Vokalia and Consonantia</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-12 mt-4" data-aos="fade-up" data-aos-once="true">
+        <div class="d-flex align-item-center">
+          <div class="image-container">
+      <div class="icon-1">
+        <svg class="bi bi-app-indicator custom-icon" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1H5.5z"></path>
+            <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+            </svg>
+        </div>
+          </div>
+          <div class="text-container d-flex">
+            <h5 class="mt-2 ms-2 text-capitalize">Grow your business</h5>
+            <p class="sub-text mt-1 ms-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+            <a class=" text-capitalize see-more ms-1" href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 mt-4" data-aos="fade-up" data-aos-once="true">
+        <div class="d-flex align-item-center">
+          <div class="image-container">
+            <div class="icon-2">
+              <svg class="bi bi-arrow-repeat custom-icon" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M2.854 7.146a.5.5 0 0 0-.708 0l-2 2a.5.5 0 1 0 .708.708L2.5 8.207l1.646 1.647a.5.5 0 0 0 .708-.708l-2-2zm13-1a.5.5 0 0 0-.708 0L13.5 7.793l-1.646-1.647a.5.5 0 0 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0 0-.708z"></path>
+                  <path fill-rule="evenodd" d="M8 3a4.995 4.995 0 0 0-4.192 2.273.5.5 0 0 1-.837-.546A6 6 0 0 1 14 8a.5.5 0 0 1-1.001 0 5 5 0 0 0-5-5zM2.5 7.5A.5.5 0 0 1 3 8a5 5 0 0 0 9.192 2.727.5.5 0 1 1 .837.546A6 6 0 0 1 2 8a.5.5 0 0 1 .501-.5z"></path>
+                  </svg>
+              </div>
+          </div>
+          <div class="text-container d-flex">
+            <h5 class="mt-2 ms-2 text-capitalize">Build products</h5>
+            <p class="sub-text mt-1 ms-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+            <a class=" text-capitalize see-more ms-1" href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 mt-4" data-aos="fade-up" data-aos-once="true">
+        <div class="d-flex align-item-center">
+          <div class="image-container">
+            <div class="icon-3">
+              <svg class="bi bi-briefcase custom-icon" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6h-1v6a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-6H0v6z"></path>
+                  <path fill-rule="evenodd" d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5v2.384l-7.614 2.03a1.5 1.5 0 0 1-.772 0L0 6.884V4.5zM1.5 4a.5.5 0 0 0-.5.5v1.616l6.871 1.832a.5.5 0 0 0 .258 0L15 6.116V4.5a.5.5 0 0 0-.5-.5h-13zM5 2.5A1.5 1.5 0 0 1 6.5 1h3A1.5 1.5 0 0 1 11 2.5V3h-1v-.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V3H5v-.5z"></path>
+                  </svg>
+              </div>
+          </div>
+          <div class="text-container d-flex">
+            <h5 class="mt-2 ms-2 text-capitalize">Success every day</h5>
+            <p class="sub-text mt-1 ms-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+            <a class=" text-capitalize see-more ms-1" href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12 mt-4" data-aos="fade-up" data-aos-once="true">
+        <div class="d-flex align-item-center">
+          <div class="image-container">
+            
+            <div class="icon-4">
+              <svg class="bi bi-collection custom-icon" width="1.5rem" height="1.5rem" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M14.5 13.5h-13A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5zm-13 1A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5h-13zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z"></path>
+                  </svg>
+          </div>
+          </div>
+          <div class="text-container d-flex">
+            <h5 class="mt-2 ms-2 text-capitalize">Bring ideas to life</h5>
+            <p class="sub-text mt-1 ms-2">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts</p>
+            <a class=" text-capitalize see-more ms-1" href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--testimonials-->
+<section class="py-5 main" id="testimonials">
+  <div class="container mb-5">
+    <div class="row">
+        <div class="col-lg-4 col-12 text-lg-start text-center align-item-center justify-content-center mb-5" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
+            <p class="text-uppercase text-primary mb-0 blue-text">testimonials</p>
+            <h1 class="text-capitalize">Our customers feedbck</h1>
+            <button class="button arrow-button" type="button"  data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+            </svg></button>
+            <button class="button arrow-button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+            </svg></button>
+        </div>
+        <div class="col-lg-8 col-12 pt-2" data-aos="fade-up" data-aos-once="true" data-aos-delay="150">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <ol class="carousel-indicators carousel-indicators-1 list-unstyled">
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                  </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-6">
+                          <div class="content-1">
+                            <p class="feature-text"> “Separated they <span class="color">live in Bookmarksgrove right at the coast of the Semantics,</span> a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. ”</p>
+                            <div class="references d-flex align-item-center">
+                              <div class="image-container">
+                                <img src="images/person_1.jpg.webp" alt="James Anderson" class="image rounded-pill">
+                              </div>
+                              <div class="text-container d-flex">
+                                <p class="name mt-2 ms-2 mb-0">James Anderson</p>
+                                <p class="sub-text-1 mt-1 ms-2">Facebook, Product Lead</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 d-lg-block d-none">
+                          <div class="content-2">
+                            <p class="feature-text"> “Separated they <span class="color">live in Bookmarksgrove right at the coast of the Semantics,</span> a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. ”</p>
+                            <div class="references d-flex align-item-center">
+                              <div class="image-container">
+                                <img src="images/person_2.jpg.webp" alt="James Anderson" class="image rounded-pill">
+                              </div>
+                              <div class="text-container d-flex">
+                                <p class="name mt-2 ms-2 mb-0">James Anderson</p>
+                                <p class="sub-text-1 mt-1 ms-2">Facebook, Product Lead</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-6">
+                          <div class="content-2">
+                            <p class="feature-text"> “Separated they <span class="color">live in Bookmarksgrove right at the coast of the Semantics,</span> a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. ”</p>
+                            <div class="references d-flex align-item-center">
+                              <div class="image-container">
+                                <img src="images/person_2.jpg.webp" alt="James Anderson" class="image rounded-pill">
+                              </div>
+                              <div class="text-container d-flex">
+                                <p class="name mt-2 ms-2 mb-0">James Anderson</p>
+                                <p class="sub-text-1 mt-1 ms-2">Facebook, Product Lead</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 d-lg-block d-none">
+                          <div class="content-3">
+                            <p class="feature-text"> “Separated they <span class="color">live in Bookmarksgrove right at the coast of the Semantics,</span> a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. ”</p>
+                            <div class="references d-flex align-item-center">
+                              <div class="image-container">
+                                <img src="images/person_3.jpg.webp" alt="James Anderson" class="image rounded-pill">
+                              </div>
+                              <div class="text-container d-flex">
+                                <p class="name mt-2 ms-2 mb-0">James Anderson</p>
+                                <p class="sub-text-1 mt-1 ms-2">Facebook, Product Lead</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                <div class="carousel-item ">
+                    <div class="row">
+                        <div class="col-lg-6">
+                          <div class="content-3">
+                            <p class="feature-text"> “Separated they <span class="color">live in Bookmarksgrove right at the coast of the Semantics,</span> a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. ”</p>
+                            <div class="references d-flex align-item-center">
+                              <div class="image-container">
+                                <img src="images/person_3.jpg.webp" alt="James Anderson" class="image rounded-pill">
+                              </div>
+                              <div class="text-container d-flex">
+                                <p class="name mt-2 ms-2 mb-0">James Anderson</p>
+                                <p class="sub-text-1 mt-1 ms-2">Facebook, Product Lead</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 d-lg-block d-none">
+                          <div class="content-1">
+                            <p class="feature-text"> “Separated they <span class="color">live in Bookmarksgrove right at the coast of the Semantics,</span> a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. ”</p>
+                            <div class="references d-flex align-item-center">
+                              <div class="image-container">
+                                <img src="images/person_1.jpg.webp" alt="James Anderson" class="image rounded-pill">
+                              </div>
+                              <div class="text-container d-flex">
+                                <p class="name mt-2 ms-2 mb-0">James Anderson</p>
+                                <p class="sub-text-1 mt-1 ms-2">Facebook, Product Lead</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>              
+    </div>
+</div>
+</section>
+<!--about-us-->
+<section class="about-us main" id="about">
+  <div class="container mt-5 pt-5">
+    <div class="row pt-5 ">
+      <div class="col-lg-8 col-12" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
+        <div>
+          <img src="images/about.png" alt="about" class="about">
+        </div>
+      </div>
+      <div class="col-lg-4 col-12" data-aos="fade-up" data-aos-once="true" data-aos-delay="150">
+        <p class="text-uppercase text-primary mb-0 blue-text">about</p>
+        <p class="text-capitalize heading-1">About us</p>
+        <p class="sub-text mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coas.</p>
+        <p class="sub-text mb-4 ">Separated they <span class="color">live in Bookmarksgrove right at the coast of the Semantics</span>, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+        <ul class="list-unstyled checkmark ">
+          <li class="sub-text"> There live the blind texts</li>
+          <li class="sub-text mt-2"> Far far away behind the word</li>
+          <li class="mt-2 sub-text">Their place and supplies</li>
+       </ul>
+       <div class="row">
+        <div class="col-lg-6 col-12"data-aos="fade-up" data-aos-once="true" data-aos-delay="350">
+          <div class="counting mb-0" >
+            <p>59M</p>
+            <p class="sub-text text-uppercase">members</p>
+        </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-once="true" data-aos-delay="350">
+          <p class="counting">14</p>
+          <p class="sub-text text-uppercase">team</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--our-news-->
+<section class="main pricing">
+  <div class="container">
+    <div class="row justify-content-center mb-4">
+      <div class="col-12 text-center pt-5 mt-3" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
+        <p class="heading-1 text-capitalize">Our news</p>
+        <p class="sub-text">Far from the countries Vokalia and Consonantia</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-12 col-md-6 mt-5">
+        <!--card-1-->
+        <div class="card card-news py-3 px-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="100">
+          <div class=" d-flex align-item-center">
+            <div class="image-container ps-4 pt-3">
+              <img src="images/person_1.jpg.webp" alt="James Anderson" class="image rounded-pill">
+            </div>
+            <div class="text-container pt-3">
+              <p class="name mt-2 ms-2 mb-0">James Anderson</p>
+              <p class="sub-text-1 mt-1 ms-2">Jun 14, 2020</p>
+            </div>
+          </div>
+          <div class="ps-4 pt-3 pe-5">
+            <p class="card-text">Digital Service, 4 min read</p>
+            <a class="card-text-link mb-3" href="#">Far far away behind the word mountains far from the countries</a>
+          </div>
+          <div class="arrow-back ps-4 mt-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="45" fill="currentColor" class="bi bi-arrow-right arrow" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 mt-5">
+        <!--card-2-->
+        <div class="card card-news py-3 px-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="250">
+          <div class=" d-flex align-item-center">
+            <div class="image-container ps-4 pt-3">
+              <img src="images/person_2.jpg.webp" alt="James Anderson" class="image rounded-pill">
+            </div>
+            <div class="text-container pt-3">
+              <p class="name mt-2 ms-2 mb-0">James Anderson</p>
+              <p class="sub-text-1 mt-1 ms-2">Jun 14, 2020</p>
+            </div>
+          </div>
+          <div class="ps-4 pt-3 pe-5">
+            <p class="card-text">Digital Service, 4 min read</p>
+            <a class="card-text-link mb-3" href="#">Far far away behind the word mountains far from the countries</a>
+          </div>
+          <div class="arrow-back ps-4 mt-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="45" fill="currentColor" class="bi bi-arrow-right arrow" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+        </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-12  mt-5">
+        <!--card-3-->
+        <div class="card card-news py-3 px-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="350">
+          <div class=" d-flex align-item-center">
+            <div class="image-container ps-4 pt-3">
+              <img src="images/person_3.jpg.webp" alt="James Anderson" class="image rounded-pill">
+            </div>
+            <div class="text-container pt-3">
+              <p class="name mt-2 ms-2 mb-0">James Anderson</p>
+              <p class="sub-text-1 mt-1 ms-2">Jun 14, 2020</p>
+            </div>
+          </div>
+          <div class="ps-4 pt-3 pe-5">
+            <p class="card-text">Digital Service, 4 min read</p>
+            <a class="card-text-link mb-3" href="#">Far far away behind the word mountains far from the countries</a>
+          </div>
+          <div class="arrow-back ps-4 mt-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="45" fill="currentColor" class="bi bi-arrow-right arrow" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/></svg>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--Get-in-touch-->
+
+<section class="main"id="get-in-touch">
+<div class="container">
+  <div class="row justify-content-center mb-4">
+    <div class="col-12 text-center pt-5 mt-3 px-3" data-aos="fade-up" data-aos-once="true"data-aos-delay="100">
+      <p class="heading-1 text-capitalize">Get in touch</p>
+      <p class="sub-text">Far from the countries Vokalia and Consonantia</p>
+    </div>
+  </div>
+  <div class="row pt-5">
+    <!--first-column-->
+    <div class="col-lg-7 col-12 mt-2" data-aos="fade-up" data-aos-once="true" data-aos-delay="150">
+      <!--row-within column-->
+      <div class="row">
+        <div class="col-6">
+          <div class="form">
+            <label class="sub-text mb-3"> First name</label> <br>
+            <input type="text" id="fname" class="naming">
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form">
+            <label class="sub-text mb-3"> Last name</label> <br>
+            <input type="text" id="fname" class="naming">
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="form">
+            <label class="sub-text mb-3">Email address</label> <br>
+            <input type="email" id="email" class="naming">
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div class="form">
+            <label class="sub-text mb-3">Message</label> <br>
+            <textarea style="height:15vh"  class="naming"></textarea>
+            <button class="btn btn-primary custom-btn-3 text-uppercase rounded-pill py-3 px-4 d-inline-block mt-2"> send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--second-column-->
+    <div class="col-lg-5 col-12 mt-2 px-4" data-aos="fade-up" data-aos-once="true" data-aos-delay="150">
+        <h5 class="text-capitalize">Contact info</h5>
+        <!--location-->
+        <div class="d-flex mt-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+          </svg>
+          <p class="text-capitalize ms-3">43 Raymouth Rd. Baltemoer, London 3910</p>
+        </div>
+        <!--calls-->
+        <div class="d-flex mt-1 contact">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg><p class="text-capitalize ms-3">+1(123)-456-7890</p>
+        </div>
+        <div class="d-flex mt-1 contact">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg>
+          <p class="ms-3">+1(123)-456-7890</p>
+        </div>
+       <!--for mails-->
+       <div class="d-flex mt-1 contact">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+        </svg>
+        <p class="ms-3">info@yahoo.com</p>
+      </div>
+      <!--web-link-->
+      <div class="d-flex mt-1 contact">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-asia-australia" viewBox="0 0 16 16">
+          <path d="m10.495 6.92 1.278-.619a.483.483 0 0 0 .126-.782c-.252-.244-.682-.139-.932.107-.23.226-.513.373-.816.53l-.102.054c-.338.178-.264.626.1.736a.476.476 0 0 0 .346-.027ZM7.741 9.808V9.78a.413.413 0 1 1 .783.183l-.22.443a.602.602 0 0 1-.12.167l-.193.185a.36.36 0 1 1-.5-.516l.112-.108a.453.453 0 0 0 .138-.326ZM5.672 12.5l.482.233A.386.386 0 1 0 6.32 12h-.416a.702.702 0 0 1-.419-.139l-.277-.206a.302.302 0 1 0-.298.52l.761.325Z"/>
+          <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM1.612 10.867l.756-1.288a1 1 0 0 1 1.545-.225l1.074 1.005a.986.986 0 0 0 1.36-.011l.038-.037a.882.882 0 0 0 .26-.755c-.075-.548.37-1.033.92-1.099.728-.086 1.587-.324 1.728-.957.086-.386-.114-.83-.361-1.2-.207-.312 0-.8.374-.8.123 0 .24-.055.318-.15l.393-.474c.196-.237.491-.368.797-.403.554-.064 1.407-.277 1.583-.973.098-.391-.192-.634-.484-.88-.254-.212-.51-.426-.515-.741a6.998 6.998 0 0 1 3.425 7.692 1.015 1.015 0 0 0-.087-.063l-.316-.204a1 1 0 0 0-.977-.06l-.169.082a1 1 0 0 1-.741.051l-1.021-.329A1 1 0 0 0 11.205 9h-.165a1 1 0 0 0-.945.674l-.172.499a1 1 0 0 1-.404.514l-.802.518a1 1 0 0 0-.458.84v.455a1 1 0 0 0 1 1h.257a1 1 0 0 1 .542.16l.762.49a.998.998 0 0 0 .283.126 7.001 7.001 0 0 1-9.49-3.409Z"/>
+        </svg>
+        <p class=" ms-3">http://Colorlib.com/</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!--footer-->
+
+<footer class="footer pt-5 pb-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-12">
+        <div>
+          <h6 class="text-capitalize pt-3">about launch<span class="dot">.</span></h6>
+        <p class="sub-text mt-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+        </div>
+        <div class="appliance mt-5">
+          <h5>Connect</h5>
+          <ul class="list-unstyled widgets d-flex mt-3">
+            <!--instagram-->
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg></a></li>
+            <!--twitter-->
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg> </a></li>
+            <!--facebook-->
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg> </a></li>
+            <!--Linkdin-->
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg> </a></li>
+            <!--pinterest-->
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+              <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/>
+            </svg> </a></li>
+            <!--dribble-->
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dribbble" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 0C3.584 0 0 3.584 0 8s3.584 8 8 8c4.408 0 8-3.584 8-8s-3.592-8-8-8zm5.284 3.688a6.802 6.802 0 0 1 1.545 4.251c-.226-.043-2.482-.503-4.755-.217-.052-.112-.096-.234-.148-.355-.139-.33-.295-.668-.451-.99 2.516-1.023 3.662-2.498 3.81-2.69zM8 1.18c1.735 0 3.323.65 4.53 1.718-.122.174-1.155 1.553-3.584 2.464-1.12-2.056-2.36-3.74-2.551-4A6.95 6.95 0 0 1 8 1.18zm-2.907.642A43.123 43.123 0 0 1 7.627 5.77c-3.193.85-6.013.833-6.317.833a6.865 6.865 0 0 1 3.783-4.78zM1.163 8.01V7.8c.295.01 3.61.053 7.02-.971.199.381.381.772.555 1.162l-.27.078c-3.522 1.137-5.396 4.243-5.553 4.504a6.817 6.817 0 0 1-1.752-4.564zM8 14.837a6.785 6.785 0 0 1-4.19-1.44c.12-.252 1.509-2.924 5.361-4.269.018-.009.026-.009.044-.017a28.246 28.246 0 0 1 1.457 5.18A6.722 6.722 0 0 1 8 14.837zm3.81-1.171c-.07-.417-.435-2.412-1.328-4.868 2.143-.338 4.017.217 4.251.295a6.774 6.774 0 0 1-2.924 4.573z"/>
+            </svg> </a></li>
+          </ul>
+        </div>
+      </div>
+      <!--projects-->
+      <div class="col-lg-2 col-12">
+        <h6 class="pt-2">Projects</h6>
+        <ul class="list-unstyled mt-3">
+          <li class="sub-sub-text text-capitalize mt-3"> <a class="text-decoration-none" href="#"> le stadium</a></li>
+          <li class="sub-sub-text text-capitalize mt-3"><a class="text-decoration-none"href="#">france buiding</a></li>
+          <li class="sub-sub-text text-capitalize mt-3"><a class="text-decoration-none" href="#">22 new homes</a></li>
+          <li class="sub-sub-text text-capitalize mt-3"><a class="text-decoration-none" href="#">manage center</a></li>
+          <li class="sub-sub-text text-capitalize mt-3"><a class="text-decoration-none" href="#">sports hall</a></li>
+        </ul>
+      </div>
+      <!--services-->
+      <div class="col-lg-2 col-12">
+        <h6 class="pt-2">Services</h6>
+        <ul class="list-unstyled">
+          <li class="sub-sub-text text-capitalize mt-3"> <a class="text-decoration-none" href="#">architect</a></li>
+          <li class="sub-sub-text text-capitalize mt-3"><a class="text-decoration-none"href="#">interior design</a></li>
+          <li class="sub-sub-text text-capitalize mt-3"><a class="text-decoration-none" href="#">landscape design</a></li>
+          <li class="sub-sub-text text-capitalize mt-3"><a class="text-decoration-none" href="#">consultancy</a></li>
+        </ul>
+      </div>
+      <!--contact-->
+      <div class="col-lg-4 col-12">
+        <h6 class="pt-2">Contact</h6>
+        <address class="text-capitalize mt-3">43 Raymouth Rd. Baltemoer, London 3910</address>
+        <ul class="list-unstyled">
+          <li class="sub-sub-text mt-3"> <a class="text-decoration-none" href="#">+1(123)-456-7890</a></li>
+          <li class="sub-sub-text mt-3"><a class="text-decoration-none"href="#">+1(123)-456-7890</a></li>
+          <li class="sub-sub-text mt-3"><a class="text-decoration-none" href="#">info@yahoo.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-12 text-center justify-content-center align-item-center pt-5">
+        <p class="footer-text">
+          Copyright © 2023 All rights reserved | This template is made with <span class="text-danger"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+          </svg></span> by <a href="#" class="text-decoration-none">Colorlib</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+ <script src="java.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
